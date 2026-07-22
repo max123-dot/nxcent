@@ -1,0 +1,253 @@
+
+@media (max-width: 1200px) {
+    .nav-bar ul{
+        gap: 2.5rem;
+        margin-left: 4rem;
+    }
+    .btn{
+        padding-left: 3rem;
+        margin-left: 2rem;
+    }
+    .hero-container{
+        margin-left: 4rem;
+        width: 90%;
+    }
+    .card2-container{
+        padding: 0rem 4rem;
+    }
+    .statistics{
+        gap: 6rem;
+    }
+    #learn-more img{
+        margin: 5.2rem 0rem 0rem 4rem;
+    }
+}
+
+/* TABLET (<=992px)  */
+@media (max-width: 992px) {
+    /* nav becomes a hamburger menu */
+    .hamburger{
+        display: flex;
+    }
+    .nav-bar{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        color: aliceblue;
+        /* border-radius: 0 0 1.5rem 1.5rem; */
+        box-shadow: 0px 5px 10px 0px #abbde1be;
+        max-height: 0;
+        overflow: hidden;
+        transition:  0.3s ease;
+    }
+    .nav-bar ul{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        margin: 0;
+        padding: 2rem;
+    }
+    .nav-bar a{
+        color: aliceblue;
+    }
+    .nav-toggle:checked ~ .nav-bar{
+        max-height: 40rem;
+    }
+    .btn{
+        padding-left: 0;
+        display: inline-flex;
+        flex-direction: column;
+        justify-self: stretch;
+        /* width: 90%; */
+        /* font-size: 4rem; */
+        gap: 1rem;
+    }
+    
+    header{
+        justify-content: space-between;
+        padding: 1.5rem 2rem;
+    }
+
+    /*hero stacks*/
+    .hero-container{
+        flex-direction: column;
+        height: auto;
+        margin-left: 0;
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        gap: 2rem;
+    }
+    .hero{
+        height: auto;
+        padding-bottom: 4rem;
+    }
+    .text{
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+    }
+    .text span{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .img-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .img-container img{
+        width: 20rem;
+        height: auto;
+    }
+
+    /*services / cards*/
+    #services{
+        height: auto;
+        padding: 3rem 0;
+    }
+    .text2 h2{
+        margin-left: 0;
+    }
+    .clients{
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+    }
+    .card2-container{
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        gap: 2rem;
+    }
+    .card{
+        width: 90%;
+        height: auto;
+    }
+
+    /*learn more sections stack*/
+    #learn-more, #learn-more2, #learn-more3{
+        flex-direction: column;
+        height: auto;
+        padding: 2rem;
+        gap: 2rem;
+        text-align: center;
+    }
+    #learn-more img{
+        margin: 0 auto;
+        width: 80%;
+        height: auto;
+    }
+    .lorem, .lorem2, .lorem3{
+        width: 100%;
+        height: auto;
+        margin-top: 1rem;
+    }
+    .lorem p, .lorem2 p, .lorem3 p{
+        width: 100%;
+    }
+    .lorem button, .lorem2 button{
+        width: 50%;
+        height: 5vh;
+        margin: 2rem auto 0;
+    }
+    .logos{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /*stats*/
+    .stats-container{
+        height: auto;
+    }
+    .statistics{
+        flex-direction: column;
+        height: auto;
+        padding: 3rem 1rem;
+        gap: 3rem;
+    }
+    .stats-text{
+        text-align: center;
+    }
+    .stats{
+        width: 100%;
+        height: auto;
+        gap: 2rem;
+    }
+
+    /*caring section*/
+    .caring-section{
+        height: auto;
+    }
+    .card-flex{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card2 img{
+        width: 26rem;
+        height: 22rem;
+    }
+    .card-text{
+        margin-left: 0;
+    }
+
+    /*footer*/
+    footer{
+        height: auto;
+        padding: 3rem 2rem;
+    }
+    .footer-flex{
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+    .footer-links{
+        gap: 2rem;
+    }
+}
+
+/* MOBILE (<=600px) */
+@media (max-width: 600px) {
+    html{
+        font-size: 55%;
+    }
+    .text h1{
+        font-size: 3.2rem;
+    }
+    .btn3{
+        font-size: 1.6rem;
+    }
+    .login, .sign{
+        padding: 1rem 1.6rem;
+        font-size: 1.3rem;
+    }
+    .text-card h1{
+        font-size: 2.2rem;
+    }
+    .card img{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    .stats-text h3{
+        font-size: 2.8rem;
+    }
+    .last-text h2{
+        font-size: 2.8rem;
+    }
+    .card2 img{
+        width: 100%;
+        height: auto;
+    }
+    .card-text{
+        width: 90%;
+        margin: -6rem auto 0;
+    }
+    .lorem button, .lorem2 button{
+        width: 70%;
+    }
+}
